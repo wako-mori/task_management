@@ -1,24 +1,58 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 概要
+<!-- URL: -->
+日々のタスクや、プロジェクト毎のタスクなど、やるべきことを明確にしミッション達成や
+自分自身の成長に繋げていきます。
 
-Things you may want to cover:
+#### ログイン画面
+![2020-06-01 19 41 33](https://user-images.githubusercontent.com/63290071/83401586-0eb7a500-a440-11ea-967f-d15bce1565f4.png)
 
-* Ruby version
+#### タスク一覧画面
+![2020-05-31 19 39 40](https://user-images.githubusercontent.com/63290071/83350423-f760b500-a376-11ea-8e58-143e8a1c5798.png)
 
-* System dependencies
+#### タスク編集画面
+![2020-05-31 19 40 32](https://user-images.githubusercontent.com/63290071/83350461-40186e00-a377-11ea-9eb8-ebd0a9003af6.png)
 
-* Configuration
+<!-- ## テストアカウント
+こちらをご使用ください。
+・メールアドレス
 
-* Database creation
+・パスワード -->
 
-* Database initialization
+## 作成期間
+・2020/5/27 本リポジトリ作成  
+・2020/6/5 各機能実装完了後、デプロイ  
+・バージョンアップを継続
 
-* How to run the test suite
+## 仕様
+・macOS Mojava 10.14.6  
+・bootstrap 4  
+・Rails 5.0.7.2  
+・ruby 2.5.1
 
-* Services (job queues, cache servers, search engines, etc.)
+## おもな機能
+### ユーザー
+・ユーザー登録、ログイン、ログアウト  
+・ユーザーは同じ名前で登録できない  
 
-* Deployment instructions
+### プロジェクトグループ
+・グループの登録  
+・ユーザーの追加削除
 
-* ...
+### タスク
+・作成、編集、削除  
+・タスク名が空白の場合は登録できない  
+・詳細、期日を登録できる
+
+## 今後実装したいこと
+・テスト（taskモデル、コントローラー）
+　※userモデルのテスト済み
+・タスク送信時の非同期通信化
+・自動更新機能
+・期限を超過した際の赤文字で表示
+・タスク完了にチェックが入った際は取消線で表示
+・カレンダーに表示  
+・タスクの並び替え
+
+現在、投稿順に表示されるようになっていますが、優先順にタスクの表示順を変更するようにしていきたいです。
