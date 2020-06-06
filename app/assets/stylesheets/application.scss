@@ -1,5 +1,10 @@
+ // Custom bootstrap variables must be set or imported *before* bootstrap.
+
 @import "reset";
+@import "bootstrap";
 @import "config/colors";
 @import "tasks/index";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import "users/new";
+@import "modules/flash";
