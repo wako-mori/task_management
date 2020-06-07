@@ -3,5 +3,7 @@ Rails.application.routes.draw do
   root "tasks#index"
 
   resources :users, only: [:edit, :update]
+
+  resources :groups, only: [:new, :create]
 end
 
