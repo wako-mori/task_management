@@ -7,7 +7,7 @@ class User < ApplicationRecord
   validates :name, presence: true, uniqueness: true
   validates :password, presence: true, length: {minimum: 8 }
 
-  # has_many :group_users
-  # has_many :groups, through: :group_users
+  has_many :group_users
+  has_many :groups, through: :group_users
   # has_many :tasks
 end
